@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Bebas+Neue&family=Hurricane&family=Nunito+Sans:wght@600&family=Roboto:wght@300&family=Rubik+Moonrocks&family=Sansita+Swashed:wght@300&display=swap");
+
+#para2 {
+  background-color: pink;
+  font-family: "Beau Rivage", cursive;
+  font-size: 24px;
+  text-align: justify;
+  /* padding: 30px 10px;  /* 30px TB and 10px LR
+  padding :30px;       All value having 30px     /*TRBL all will 30px
+  padding : 30px 10px 20px;  30px from Top 10px for left and right and 20px Bottom*/
+  padding: 10px 20px 30px 40px;
+}
+
+h1 {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.style1 {
+  background-color: rgb(157, 195, 43);
+  color: #1e88e5;
+  text-align: center;
+}
+
+/* universal Selector */
+/* comment in css */
+/* cmd + / */
+
+/* * {
+  border: 2px solid rgb(178, 141, 141);
+} */
+
+/* rgb color
+hexa-decimal 
+find color on material ui  */
+a {
+  border: 2px solid red;
+  margin-left: 40px;
+}
+
+body {
+  /* background-color: bisque; */
+  /* background-image: url("data:image/jpeg;base64,/9j/");
+  /* background-repeat: no-repeat;
+  background-size: cover;
+   */
+
+   background-image: linear-gradient(to right top, orange, pink, blue);
+}

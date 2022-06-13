@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid Api Fetching</title>
+    <style>
+        *{padding: 0;margin: 0;box-sizing: border-box;}
+        .container  
+        {
+            width: 100%;
+            height: 100vh;
+            background-color: burlywood;
+        }
+        h1
+        {
+            text-align: center;
+            background-color: gray;
+            color: aliceblue;
+            padding: 20px;
+            border-radius: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 30px;
+        }
+        .box
+        {
+            width: 500px;
+            height: 400px;
+            background-color: cornflowerblue;
+            margin: 10px auto;
+        }
+        .box h2
+        {
+            text-align: center;
+            color: darkslategray;
+            font-size: 24px;
+            padding-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        pre
+        {
+            font-family: arial;
+            font-size: 24px;
+            margin-left: 40px;
+            line-height: 50px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fetching Data using Covid API</h1>
+      <div class="box">
+          <h2>Today Covid Cases</h2>
+          <pre id="data"></pre>
+      </div>
+    </div>
+    <script src="covidApi.js"></script>
+  </body>
+</html>

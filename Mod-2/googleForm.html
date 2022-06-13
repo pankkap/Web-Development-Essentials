@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Account</title>
+  </head>
+  <body>
+    <form action="app.html" method="get">
+      <pre>
+        <label for="">First Name: </label>
+        <input type="text" name="fname" required>
+      
+        <label for="">Last Name: </label>
+        <input type="text" name="lname" required>
+
+        <label for="">Password: </label>
+        <input type="password" name="pwd" required> 
+
+        <label for="">Gender: </label>
+        <input type="radio" name="gender" checked value="male"> male  <input type="radio" name="gender" value="female" > female
+
+        <label for="">Hobbies:</label>
+        <input type="checkbox" value="reading" name="hobbies"> Reading
+        <input type="checkbox" value="writing" name="hobbies"> Writing
+        <input type="checkbox" value="gardening" name="hobbies"> Gardening
+        <input type="checkbox" value="coding" checked name="hobbies"> Coding
+
+        <label>Select City</label>
+        <select name="city" id="">
+            <option value="" disabled selected>Choose City</option>
+            <option value="Jursey"> Jursey</option>
+            <option value="Sydney"> Sydney</option>
+            <option value="dubai"> Dubai</option>
+            <option value="Delhi"> Delhi</option>
+        </select>
+
+        <label for="">Address: </label>
+        <textarea name="address" id="" cols="30" rows="5"></textarea>
+
+        <label for="">Mobile No:</label>
+        <input type="number" name="mobile" id="">
+
+        <label for="">DOB:</label>
+        <input type="date" name="dob">
+
+        <label for="">DOT:</label>
+        <input type="time" name="dot">
+
+         <label for="">Upload Image:</label>   
+         <input type="file" name="photo">
+
+         <input type="submit" value="Register Me">      <input type="reset" value="Clear">
+
+    </pre>
+    </form>
+  </body>
+</html>

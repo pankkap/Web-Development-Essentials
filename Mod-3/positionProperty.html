@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: 1000vh; /*viewPort Height8*/
+        border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #box {
+        width: 500px;
+        height: 400px;
+        border: 2px solid green;
+        /* position: relative; */
+      }
+      #dataBox
+      {
+          width: 150px;
+          height: 150px;
+          background-color: red;
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box">
+          <div id="dataBox"></div>
+      </div>
+    </div>
+  </body>
+</html>

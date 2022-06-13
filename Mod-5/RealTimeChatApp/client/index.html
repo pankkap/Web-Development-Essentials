@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Time Chat Application</title>
+  </head>
+  <body>
+    <h3>This is a Demo on Real Time Chat Application using Web Sockets</h3>
+    <pre>
+        Message to Server:
+
+        <input type="text" id="input">
+
+        <button>Send Msg</button>
+
+        <button id="btn-1">Close Chat</button>
+    </pre>
+
+    <script>
+      var input = document.getElementById("input");
+      var btn = document.querySelector("button");
+      var btn1 = document.getElementById("btn-1");
+
+      const ws = new WebSocket("ws://localhost:8000");
+
+      ws.addEventListener("open", () => {
+        console.log("We are connected to the Server");
+      });
+      btn.onclick = function () {
+        msg = input.value;
+        ws.send(msg);
+      };
+
+      ws.addEventListener("message", (e) => {
+        console.log("Server Reply: " + e.data);
+      });
+
+      btn1.onclick = function () {
+        ws.close();
+        console.log("Connection close with the server");
+      };
+    </script>
+  </body>
+</html>

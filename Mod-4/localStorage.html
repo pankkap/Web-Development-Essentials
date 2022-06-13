@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Local Storage Demo</h1>
+    <pre>
+    User-1 Data: 
+    <input type="text" id="User-1">
+    
+    User-2 Data: 
+    <input type="text" id="User-2">
+
+    <button>Store Data</button>
+    </pre>
+
+    <script>
+      var input_1 = document.getElementById("User-1");
+      var input_2 = document.getElementById("User-2");
+      var btn = document.querySelector("button");
+      btn.onclick = function () {
+        let data1 = input_1.value;
+        let data2 = input_2.value;
+        localStorage.setItem("MyData1", data1);
+        localStorage.setItem("MyData2", data2);
+      };
+    </script>
+  </body>
+</html>
